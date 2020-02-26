@@ -91,7 +91,6 @@ class Gallery extends Component {
                 autoPlayDirection="rtl"
                 autoPlay={true}
                 fadeOutAnimation={true}
-                mouseTrackingEnabled={false}
                 disableAutoPlayOnAction={false}
                 buttonsDisabled={false}>
                   <Fragment>
