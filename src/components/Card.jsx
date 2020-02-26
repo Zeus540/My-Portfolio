@@ -8,13 +8,14 @@ margin:1%;
 padding: 20px;
 background:transparent;
 width:calc(100%/3);
-
+background:var(--Section-color);
+box-shadow: #000000 18px 15px 24px 2px;
 &:hover{
     transform:scale(1.05);
-    background:var(--Section-color);
+    background:var(--primary-color);
     box-shadow: #000000 18px 15px 24px 2px;
     h4{
-        color:var(--primary-color);
+        color:var(--secondary-color);
         text-decoration:unset!important;
     }
 }

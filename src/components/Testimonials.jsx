@@ -20,12 +20,20 @@ color: var(--secondary-color);
 margin: 0px;
 text-align: center;
 `
+const Headingb = styled.h2`
+color: coral;
+margin: 10px;
+text-align: center;
+`
 
 const Text = styled.p`
 padding: 0px;
 color:aliceblue;
 margin:0 auto;
 text-align:center;
+`
+const Sub = styled.sub`
+color:coral;
 `
 
 const Box = styled.div`
@@ -67,7 +75,7 @@ class Testimonials extends Component {
       
       <div className="row">
         <Container id="Hobbies">
-          <Heading className="headings">Client Testimonials</Heading>
+          <Heading className="headings">WORK Experience</Heading>
       
       
                 <Box>
@@ -85,21 +93,19 @@ class Testimonials extends Component {
                 onSlideChanged={this.onSlideChanged}
                 buttonsDisabled={true}>
                   <Fragment>
-                  <Text>My new site is so much faster and easier to work with than my old site.<br/>  It used to take me an hour or more to update a page</Text>
-                  <Heading>Kamey</Heading>
+                  <Headingb>Digitas Liqurice</Headingb>
+                  <Text>My new site is so much faster and easier to work with than my old site.<br/>  It used to take me an hour or more to update a page <br/>
+                  <Sub> 2019 - Present</Sub>
+                  </Text>
                   </Fragment>
+
                   <Fragment>
-                  <Text>Happy handwritten thank you notes… <br/> I just wanted to let you know that it's been great working with you.</Text>
-                  <Heading>Shanice</Heading>
+                  <Headingb>Potter's Workshop</Headingb>
+                  <Text>My new site is so much faster and easier to work with than my old site.<br/>  It used to take me an hour or more to update a page <br/>
+                  <Sub> 2018 - 2019</Sub>
+                  </Text>
                   </Fragment>
-                  <Fragment>
-                  <Text>My new site is so much faster and easier to work with than my old site.<br/> It used to take me an hour or more to update a page</Text>
-                  <Heading>Anushka</Heading>
-                  </Fragment>
-                  <Fragment>
-                  <Text>Happy handwritten thank you notes… <br/> I just wanted to let you know that it's been great working with you.</Text>
-                  <Heading>Shane</Heading>
-                  </Fragment>
+                  
                 </AliceCarousel>      
                 </Box>
                 

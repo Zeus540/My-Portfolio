@@ -149,7 +149,7 @@ render() {
                    &nbsp;
                    <Item><Sub><Anchor href="https://maps.google.com/"><i class="fa fa-home"/> &nbsp; 25 Thomas Crescent</Anchor></Sub></Item>
                    &nbsp;
-                   <Item><Sub><Anchor href="tel:021 947 8763"><i class="fa fa-phone"/> &nbsp; 021 947 8763</Anchor></Sub></Item>
+                   <Item><Sub><Anchor href="tel:065 947 9631"><i class="fa fa-phone"/> &nbsp; 065 947 9631</Anchor></Sub></Item>
                </List>
                &nbsp;
                 <Text >

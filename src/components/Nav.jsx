@@ -54,10 +54,7 @@ padding:18px 20px;
 background:var(--primary-color);
 color:var(--secondary-color);
 font-size:20px;
-&:hover{
-  color:#717171;
-  cusor:pointer
-}
+
 `
 const ListItem = styled.li`
 list-style:none;
@@ -69,14 +66,14 @@ height:auto;
 @media(max-width:768px){
      padding:20px 6px;
   &:hover {
-   width:100vw;
+    padding:20px 50px;
   }
   
 }
 &:hover {
-  background:var(--secondary-color);
-  color:var(--Section-color);
-  
+  background:coral;
+ 
+  padding:20px 100px;
     
 `
 
@@ -98,7 +95,7 @@ render() {
         </Link>
         
       <List>
-      <ListItem>
+      
         <Link
           activeClass="active"
           to="Nav"
@@ -106,10 +103,10 @@ render() {
           smooth={true}
           offset={-100}
           duration= {350}
-          >Home
+          ><ListItem>Home</ListItem>
         </Link>
-      </ListItem>
-      <ListItem>
+      
+      
         <Link
           activeClass="active"
           to="Hobbies"
@@ -117,10 +114,10 @@ render() {
           smooth={true}
           offset={-250}
           duration= {350}
-          >About Me
+          ><ListItem>About Me</ListItem>
         </Link>  
-      </ListItem> 
-      <ListItem>
+     
+      
         <Link
           activeClass="active"
           to="Skills"
@@ -128,10 +125,9 @@ render() {
           smooth={true}
           offset={-50}
           duration= {350}
-          >Projects
+          ><ListItem>Projects</ListItem>
         </Link>
-      </ListItem>
-      <ListItem >
+      
         <Link 
           activeClass="active"
           to="ContactMe"
@@ -139,9 +135,9 @@ render() {
           smooth={true}
           offset={-50}
           duration= {350}
-          >Contact Me
+          ><ListItem>Contact Me </ListItem>
         </Link>
-      </ListItem>
+     
    
       </List>
       </Navbar>
