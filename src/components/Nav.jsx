@@ -22,10 +22,10 @@ display:flex;
       flex-direction:column;
       justify-content: center;
       margin:0 auto;
-      transform: translateY(-55%);
+      
       transition:ease-in 200ms;
       &:hover{
-        transform: translateY(0%);
+        
       }
   }
 `
@@ -54,6 +54,7 @@ padding:18px 20px;
 background:var(--primary-color);
 color:var(--secondary-color);
 font-size:20px;
+display:none;
 
 `
 const ListItem = styled.li`
@@ -63,17 +64,24 @@ margin:0px 0px
 padding:20px 10px;
 transition: ease-in 200ms;
 height:auto;
-@media(max-width:768px){
-     padding:20px 6px;
+@media(max-width:425px){
   &:hover {
     padding:20px 50px;
+    background:var(--secondary-color);
+    color:var(--Section-color);
   }
   
 }
-&:hover {
-  background:coral;
- 
-  padding:20px 100px;
+@media(min-width:426px){
+     padding:20px 6px;
+  &:hover {
+    padding:20px 100px;
+    background:var(--secondary-color);
+    color:var(--Section-color);
+  }
+  
+}
+
     
 `
 

@@ -55,8 +55,8 @@ class Gallery extends Component {
   }
  
   responsive = {
-    0: { items: 2 },
-    375: { items: 2 },
+    0: { items: 3 },
+    375: { items: 3 },
     425: { items: 5 },
     768: { items: 6 },
     1024: { items: 8 },
@@ -84,60 +84,58 @@ class Gallery extends Component {
       
                 <Box>
                 <AliceCarousel 
-                mouseTrackingEnabled 
+                
                 items={this.state.galleryItems}
                 responsive={this.responsive}
                 autoPlayInterval={2000}
                 autoPlayDirection="rtl"
                 autoPlay={true}
                 fadeOutAnimation={true}
-                mouseTrackingEnabled={true}
-                disableAutoPlayOnAction={true}
-                onSlideChange={this.onSlideChange}
-                onSlideChanged={this.onSlideChanged}
-                buttonsDisabled={true}>
+                mouseTrackingEnabled={false}
+                disableAutoPlayOnAction={false}
+                buttonsDisabled={false}>
                   <Fragment>
-                  <img src={css} onDragStart={handleOnDragStart} className="-d-b" />
+                  <img src={css}  className="-d-b" />
                  <Text>Css3</Text>
                   </Fragment>
                   <Fragment>
-                  <img src={boot} onDragStart={handleOnDragStart} className="-d-b" />
+                  <img src={boot}  className="-d-b" />
                  <Text>BootStrap</Text>
                   </Fragment>
                   <Fragment>
-                  <img src={git} onDragStart={handleOnDragStart} className="-d-b" />
+                  <img src={git}  className="-d-b" />
                  <Text>Git</Text>
                   </Fragment>
                   <Fragment>
-                  <img src={html} onDragStart={handleOnDragStart} className="-d-b" />
+                  <img src={html}  className="-d-b" />
                  <Text>Html5</Text>
                   </Fragment>
                   <Fragment>
-                  <img src={java} onDragStart={handleOnDragStart} className="-d-b" />
+                  <img src={java}  className="-d-b" />
                  <Text>JavaScript</Text>
                   </Fragment>
                   <Fragment>
-                  <img src={mail} onDragStart={handleOnDragStart} className="-d-b" />
+                  <img src={mail}  className="-d-b" />
                  <Text>MailChimp</Text>
                   </Fragment>
                   <Fragment>
-                  <img src={npm} onDragStart={handleOnDragStart} className="-d-b" />
+                  <img src={npm}  className="-d-b" />
                  <Text>Npm</Text>
                   </Fragment>
                   <Fragment>
-                  <img src={word} onDragStart={handleOnDragStart} className="-d-b" />
+                  <img src={word}  className="-d-b" />
                  <Text>WordPress</Text>
                   </Fragment>
                   <Fragment>
-                  <img src={react} onDragStart={handleOnDragStart} className="-d-b" />
+                  <img src={react}  className="-d-b" />
                  <Text>React.js</Text>
                   </Fragment>
                   <Fragment>
-                  <img src={bit} onDragStart={handleOnDragStart} className="-d-b" />
+                  <img src={bit}  className="-d-b" />
                  <Text>BitBucket</Text>
                   </Fragment>
                   <Fragment>
-                  <img src={sass} onDragStart={handleOnDragStart} className="-d-b" />
+                  <img src={sass} className="-d-b" />
                  <Text>Sass</Text>
                   </Fragment>
                 </AliceCarousel>      

@@ -8,7 +8,7 @@ border-radius:10px;
 color:white;
 display: flex;
 justify-content: center;
-@media(max-width:425px){
+@media(max-width:678px){
     margin: 0 auto;
     width: 100%;
     display: flex;
@@ -24,8 +24,6 @@ justify-content:space-around;
 @media(max-width:425px){
   
 }
-
-
 `
 
 const Input =styled.input`

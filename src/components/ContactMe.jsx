@@ -74,19 +74,22 @@ const Item=sytled.li`
 const ContainerInner=sytled.div`
     display:flex;
     padding: 0px 5% 10% 5%;
-@media(max-width:425px){
+
+@media(max-width:768px){
     display:flex;
     flex-direction:column;
 }
-@media(min-width:1025px){
-   justify-content:center;
+@media(min-width:769px){
+   
+   display:flex;
+   flex-direction:row;
 }
 `
 
 const FormContainer=sytled.div`
     width:Calc(100%/2);
-    padding:0px 0px 0px 5% ;
-@media(max-width:425px){
+    padding:0px 5% 0px 0% ;
+@media(max-width:768px){
     width:Calc(100%/1);
     padding:0px;
 }
@@ -136,30 +139,33 @@ render() {
                <Headingcontainer ><Heading className="headings ">Get In Touch</Heading></Headingcontainer>
                
                <ContainerInner>
-
+               <FormContainer >
+                    <Forms/>
+               </FormContainer>
                    <Textcontainer>
                  
-               <Mapouter class="mapouter">
-                       <Gmapcanvas className="gmap_canvas">
-                           <iframe width="90%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Cape%20Town&t=&z=13&ie=UTF8&iwloc=&output=embed"  scrolling="no" ></iframe>
-                       </Gmapcanvas>
-                </Mapouter>
-                <List>
+              
+               
+                <Text >
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio odio quisquam rerum velit, impedit inventore aliquam culpa cupiditate laborum quia dolor recusandae sapiente quasi, incidunt cum temporibus quas voluptates ullam debitis praesentium deleniti animi mollitia. Repellendus laboriosam nulla velit numquam? Aliquid aliquam tempore eveniet tempora molestias excepturi quia eos illum?"
+               </Text>
+               &nbsp;
+               <List>
                    <Subheading>Address:</Subheading>
                    &nbsp;
                    <Item><Sub><Anchor href="https://maps.google.com/"><i class="fa fa-home"/> &nbsp; 25 Thomas Crescent</Anchor></Sub></Item>
                    &nbsp;
                    <Item><Sub><Anchor href="tel:065 947 9631"><i class="fa fa-phone"/> &nbsp; 065 947 9631</Anchor></Sub></Item>
                </List>
-               &nbsp;
-                <Text >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio odio quisquam rerum velit, impedit inventore aliquam culpa cupiditate laborum quia dolor recusandae sapiente quasi, incidunt cum temporibus quas voluptates ullam debitis praesentium deleniti animi mollitia. Repellendus laboriosam nulla velit numquam? Aliquid aliquam tempore eveniet tempora molestias excepturi quia eos illum?"
-               </Text>
+               
+               <Mapouter class="mapouter">
+                       <Gmapcanvas className="gmap_canvas">
+                           <iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Cape%20Town&t=&z=13&ie=UTF8&iwloc=&output=embed"  scrolling="no" ></iframe>
+                       </Gmapcanvas>
+                </Mapouter>
                </Textcontainer>
 
-               <FormContainer >
-                    <Forms/>
-               </FormContainer>
+              
 
                </ContainerInner>
                </Container1>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-background-color:var(--Section-color);
+background-color:#000000;
 
 width:100%;
 padding: 10px 0px;
@@ -11,7 +11,7 @@ padding: 10px 0px;
     display:flex;
     flex-direction:column;
     text-align:center;
-    background:#000000cf;
+    
     position:unset;
 
 }
