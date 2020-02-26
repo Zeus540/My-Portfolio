@@ -94,7 +94,7 @@ class Gallery extends Component {
                 disableAutoPlayOnAction={false}
                 buttonsDisabled={false}>
                   <Fragment>
-                  <img src={css}  className="-d-b" />
+                  <img src={css}   className="-d-b" />
                  <Text>Css3</Text>
                   </Fragment>
                   <Fragment>
