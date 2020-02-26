@@ -7,14 +7,17 @@ const Navbar = styled.div`
 width: 100%;
 border: none;
 border-radius: 0px;
-background:var(--secondary-color);
+background:var(--transparent);
 margin: 0px!important;
 z-index: 2;
-color:white;
+color:var(--primary-color);
 position: fixed;
 height:auto;
 display:flex;
 
+@media(max-width:786px){
+     background:#000000cf;
+  }
 @media(max-width:768px){
       flex-direction:column;
       justify-content: center;
@@ -32,7 +35,15 @@ display: flex;
 justify-content:center;
 margin: 0px;
 align-items: center;
+@media(min-width:426px){
+   
+  }
+  @media(min-width:769px){
+       position: absolute;
+       right: 0px;
+    }
 `
+
 
 const Logo = styled.h1`
 display: flex;
@@ -43,21 +54,29 @@ padding:18px 20px;
 background:var(--primary-color);
 color:var(--secondary-color);
 font-size:20px;
+&:hover{
+  color:#717171;
+  cusor:pointer
+}
 `
 const ListItem = styled.li`
 list-style:none;
+color:var(--secondary-color);
 margin:0px 0px
 padding:20px 10px;
 transition: ease-in 200ms;
 height:auto;
 @media(max-width:768px){
      padding:20px 6px;
-  }
   &:hover {
-    background:var(--primary-color);
-    
+   width:100vw;
+  }
   
 }
+&:hover {
+  background:var(--secondary-color);
+  color:var(--Section-color);
+  
     
 `
 
@@ -75,7 +94,7 @@ render() {
           smooth={true}
           offset={-100}
           duration= {350}
-          ><Logo>" OCTOPUS _ "</Logo>
+          ><Logo>" Z &nbsp;ROBERTS "</Logo>
         </Link>
         
       <List>
@@ -93,45 +112,34 @@ render() {
       <ListItem>
         <Link
           activeClass="active"
-          to="Skills"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration= {350}
-          >Our Services
-        </Link>
-      </ListItem>
-      <ListItem>
-        <Link
-          activeClass="active"
           to="Hobbies"
           spy={true}
           smooth={true}
-          offset={-100}
+          offset={-250}
           duration= {350}
-          >Our Clients
+          >About Me
         </Link>  
-      </ListItem>   
-      <ListItem >
-        <Link 
+      </ListItem> 
+      <ListItem>
+        <Link
           activeClass="active"
-          to="ContactMe"
+          to="Skills"
           spy={true}
           smooth={true}
-          offset={-100}
+          offset={-50}
           duration= {350}
-          >Awards
+          >Projects
         </Link>
-      </ListItem>    
+      </ListItem>
       <ListItem >
         <Link 
           activeClass="active"
           to="ContactMe"
           spy={true}
           smooth={true}
-          offset={-100}
+          offset={-50}
           duration= {350}
-          >Contact Us
+          >Contact Me
         </Link>
       </ListItem>
    

@@ -11,7 +11,7 @@ width:calc(100%/3);
 
 &:hover{
     transform:scale(1.05);
-    background:var(--secondary-color);
+    background:var(--Section-color);
     box-shadow: #000000 18px 15px 24px 2px;
     h4{
         color:var(--primary-color);

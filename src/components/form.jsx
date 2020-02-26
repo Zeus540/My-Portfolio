@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Container =styled.div`
-background-color:var(--secondary-color);
+background-color:var(--transparent);
 border:none;
 border-radius:10px;
 color:white;
@@ -31,7 +31,7 @@ justify-content:space-around;
 const Input =styled.input`
 background-color:transparent;
 border:none;
-border-bottom:2px solid var(--primary-color);
+border-bottom:2px solid var(--Section-color);
 min-height:40px;
 margin-bottom:5px;
 color:aliceblue;
@@ -53,16 +53,21 @@ margin-top:10px;
 
 const Button =styled.button`
 background-color:var(--primary-color);
-border:none;
+border:1px white solid;
 color:var(--secondary-color);;
 text-transform:uppercase;
 padding:10px 100px;
 width:fit-content;
 margin:0 auto;
+margin-top:10px
 font-weight:700;
 @media(max-width:425px){
     width: 100%;
 }
+&:hover{
+    background:var(--Section-color)
+  
+  }
 `
 
 class Forms extends Component {
@@ -71,13 +76,13 @@ class Forms extends Component {
         return (
            <Container>
                 <Form >
-                    <Label >Name :
+                    <Label >Name 
                     <Input type="text"  placeholder="Name" />
                     </Label>
-                    <Label >Email :
+                    <Label >Email 
                     <Input type="text" placeholder="Email" />
                     </Label>
-                    <Label>Message :
+                    <Label>Message 
                     <Textarea cols="35" rows="20" placeholder="Message" ></Textarea>
                     </Label>
                     <Input type="text" placeholder="3 + 1 ="/>

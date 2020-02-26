@@ -1,6 +1,16 @@
-import React, { Component } from 'react'
+import React, { Component,Fragment } from 'react'
 import styled from 'styled-components'
 import css from '../images/css.png'
+import boot from '../images/boots.png'
+import html from '../images/html.png'
+import git from '../images/github.png'
+import java from '../images/javascript.png'
+import mail from '../images/mailchimp.png'
+import npm from '../images/npm.png'
+import word from '../images/wordpress.png'
+import react from '../images/react.png'
+import sass from '../images/sass.png'
+import bit from '../images/bitbucket.png'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 
@@ -12,46 +22,19 @@ align-items:center;
 padding: 0% 0% 3% 0%;
 margin:0 auto;
 height:100%;
-background:var(--secondary-color);
+background: var(--Section-color);
 
 
 `
 const Heading = styled.h2`
-color: var(--primary-color);
+color: var(--secondary-color);
 margin: 0px;
 text-align: center;
 `
-const ContainerInner = styled.div`
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-margin-bottom:1%;
-@media(min-width:768px){
-  display: flex;
-  flex-wrap: no-wrap;
-  justify-content: center;
-  margin-bottom:1%;
-}
-`
-
-const Image = styled.img`
-height:150px;
-width:150px;
-@media(max-width:425px){
-  height:50px;
-  width:50px;
-}
-@media(max-width:1024px){
-  height:80px;
-  width:80px;
-}
-`
-
 const Text = styled.p`
-padding: 0px;
-color:aliceblue;
-margin:0 auto;
-text-align:center;
+margin: 0px;
+text-align: center;
+color: aliceblue;
 `
 
 const Box = styled.div`
@@ -72,11 +55,11 @@ class Gallery extends Component {
   }
  
   responsive = {
-    0: { items: 1 },
+    0: { items: 2 },
     375: { items: 2 },
-    425: { items: 3 },
-    768: { items: 4 },
-    1024: { items: 6 },
+    425: { items: 5 },
+    768: { items: 6 },
+    1024: { items: 8 },
   }
  
   onSlideChange(e) {
@@ -96,7 +79,7 @@ class Gallery extends Component {
       
       <div className="row">
         <Container id="Hobbies">
-          <Heading className="headings">Our Clients</Heading>
+          <Heading className="headings">My Skills</Heading>
       
       
                 <Box>
@@ -113,12 +96,50 @@ class Gallery extends Component {
                 onSlideChange={this.onSlideChange}
                 onSlideChanged={this.onSlideChanged}
                 buttonsDisabled={true}>
+                  <Fragment>
                   <img src={css} onDragStart={handleOnDragStart} className="-d-b" />
-                  <img src={css} onDragStart={handleOnDragStart} className="-d-b" />
-                  <img src={css} onDragStart={handleOnDragStart} className="-d-b" />
-                  <img src={css} onDragStart={handleOnDragStart} className="-d-b" />
-                  <img src={css} onDragStart={handleOnDragStart} className="-d-b" />
-                  <img src={css} onDragStart={handleOnDragStart} className="-d-b" />
+                 <Text>Css3</Text>
+                  </Fragment>
+                  <Fragment>
+                  <img src={boot} onDragStart={handleOnDragStart} className="-d-b" />
+                 <Text>BootStrap</Text>
+                  </Fragment>
+                  <Fragment>
+                  <img src={git} onDragStart={handleOnDragStart} className="-d-b" />
+                 <Text>Git</Text>
+                  </Fragment>
+                  <Fragment>
+                  <img src={html} onDragStart={handleOnDragStart} className="-d-b" />
+                 <Text>Html5</Text>
+                  </Fragment>
+                  <Fragment>
+                  <img src={java} onDragStart={handleOnDragStart} className="-d-b" />
+                 <Text>JavaScript</Text>
+                  </Fragment>
+                  <Fragment>
+                  <img src={mail} onDragStart={handleOnDragStart} className="-d-b" />
+                 <Text>MailChimp</Text>
+                  </Fragment>
+                  <Fragment>
+                  <img src={npm} onDragStart={handleOnDragStart} className="-d-b" />
+                 <Text>Npm</Text>
+                  </Fragment>
+                  <Fragment>
+                  <img src={word} onDragStart={handleOnDragStart} className="-d-b" />
+                 <Text>WordPress</Text>
+                  </Fragment>
+                  <Fragment>
+                  <img src={react} onDragStart={handleOnDragStart} className="-d-b" />
+                 <Text>React.js</Text>
+                  </Fragment>
+                  <Fragment>
+                  <img src={bit} onDragStart={handleOnDragStart} className="-d-b" />
+                 <Text>BitBucket</Text>
+                  </Fragment>
+                  <Fragment>
+                  <img src={sass} onDragStart={handleOnDragStart} className="-d-b" />
+                 <Text>Sass</Text>
+                  </Fragment>
                 </AliceCarousel>      
                 </Box>
                 

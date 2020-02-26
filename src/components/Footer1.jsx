@@ -2,30 +2,18 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-background-color:var(--Section-color);
-
+background-color:var(--primary-color);
+display:inline-block;
 width:100%;
 padding: 10px 0px;
-
+position:absolute;
+bottom:0px
 @media(max-width:425px){
     display:flex;
     flex-direction:column;
     text-align:center;
-    background:#000000cf;
     position:unset;
 
-}
-`
-
-const Copyright = styled.p`
-color:var(--secondary-color);;
-display: flex;
-font-size:12px;
-flex-wrap: wrap; 
-justify-content: center;
-    @media(max-width:425px){
-        text-align: center;
-        margin: 0px;
 }
 `
 
@@ -36,7 +24,7 @@ float:right;
         color: white;
         justify-content: center;
         display:flex;
-        flex-direction:row;
+        flex-direction:column;
         margin: 0 auto;
         width: 100%;
 }
@@ -45,8 +33,13 @@ float:right;
 const List = styled.ul`
 float:right;
 margin: 0px;
+display:flex;
+padding-right:10px;
+        flex-direction:column;
     @media(max-width:425px){
         padding:0px;
+        flex-direction:row;
+        margin: 0 auto;
 }
 `
 
@@ -61,19 +54,10 @@ padding:0px 0px;
         display:inline-flex;
         flex-direction:row;
         text-align:center;
+       
 }
 `
-const Legal = styled.div`
-display: inline-block;
-`
 
-const I = styled.i`
-width:30px;
-height:30px;
-margin:15px 5px;
-border-radius: 5px;
-
-`
 
 const Anchor = styled.a`
 text-decoration:none;
@@ -84,14 +68,7 @@ margin:15px 5px;
   
   }
 `
-const Span = styled.span`
-font-size:17px;
-color:var(--secondary-color);
-&:hover{
-    color:#717171;
-  
-  }
-`
+
 class Footer extends Component {
     render() { 
         return ( 
@@ -107,9 +84,7 @@ class Footer extends Component {
                                 &nbsp;
                             </List>
                         </Social>
-                        <Legal>
-                <Copyright><Span>&nbsp;" OCTAPUS _ "  &copy;</Span> &nbsp;All Right Reserved Copyright 2019</Copyright>
-                </Legal>
+                 
             </Container>
            
          );

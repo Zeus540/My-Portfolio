@@ -3,10 +3,10 @@ import './App.css';
 import Nav from './components/Nav.jsx'
 import Jumbotron from './components/Jumbotron.jsx'
 import TextBanner from './components/TextBanner.jsx'
-import Parallax from './components/Parallax.jsx'
 import ContactMe from './components/ContactMe.jsx'
 import Footer from './components/Footer.jsx'
 import Gallery from './components/Gallery.jsx'
+import Gallery3 from './components/Gallery3.jsx'
 import Testimonials from './components/Testimonials.jsx'
 
 
@@ -14,35 +14,26 @@ function App() {
 
   const [State1] = useState([
     {key:"",
-    heading:"About Us",
-    paragraph1:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio odio quisquam rerum velit, impedit inventore aliquam culpa cupiditate laborum quia dolor recusandae sapiente quasi, incidunt cum temporibus quas voluptates ullam debitis praesentium deleniti animi mollitia. Repellendus laboriosam nulla velit numquam? Aliquid aliquam tempore eveniet tempora molestias excepturi quia eos illum?",
+    heading:"About Me",
+    paragraph1:"I have always had a passion for learning and trying new things. I would like to consider myself a hardworking and reliable person that doesn’t give up until I find a solution to the problem like applying new methods and ideas to traditional problem solving I like working on new and exciting projects that allow me to express my creativity and opinions. I also consider myself a team worker and able to cope with a deadline and a high pressure environment",
 
 }
   ]);
 
-  const [State2] = useState([
-    {key:"",
-    heading:"Awards",
-    paragraph1:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio odio quisquam rerum velit, impedit inventore aliquam culpa cupiditate laborum quia dolor recusandae sapiente quasi, incidunt cum temporibus quas voluptates ullam debitis praesentium deleniti animi mollitia. Repellendus laboriosam nulla velit numquam? Aliquid aliquam tempore eveniet tempora molestias excepturi quia eos illum?",
-
-}
-  ]);
+  
    
   return (
     <div className="App">
       <Nav id="Nav"/>
 
-      <Jumbotron text='OCTOPUS _' text2='Dev House'  />
+      <Jumbotron text='Zaheer Roberts' text2='Front-End Developer'  />
 
       {State1.map((data, index) => (
-            <TextBanner key={index}  heading={data.heading} paragraph1={data.paragraph1} />))}
+            <TextBanner key={index}  heading={data.heading} paragraph1={data.paragraph1} />))}       
+ <Gallery/>
 
-      <Parallax heading='Skills'/>
-      {State2.map((data, index) => (
-            <TextBanner key={index}  heading={data.heading} paragraph1={data.paragraph1} />))}
-      <Gallery/>
-    
-            <Testimonials/>
+ <Gallery3/>
+ <Testimonials/>
            <ContactMe/>
       <Footer/>
     </div>

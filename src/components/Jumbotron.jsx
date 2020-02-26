@@ -1,42 +1,28 @@
 import React, {Component,Fragment} from 'react';
 import styled from 'styled-components';
-import Un from '../images/un.jpg';
-import Arrow from '../images/arrow.png';
-
+import Color from '../images/color.jpg'
+import Footer1 from './Footer1'
 import { Link } from "react-scroll";
 
 const Container = styled.div`
 width: 100%;
 min-height:100%;
-background-image:url(${Un});
+background-image:url(${Color});
 background-size:100% 100%;
 position: relative;
 
 `
 
-const Test = styled.div`
-
-justify-content: center;
-margin:5% 0% 0% 0
-width:100%;
-`
-
-const NavArrow = styled.img`
-width:50px
-transition: 100ms;
-display: block;
-margin: 0 auto;
-&:hover{
-  transform: translateY(20px);
-}
-`
 
 const Heading1 = styled.h2`
-color:var(--primary-color);
+color:var(--secondary-color);
 text-align:center;
 margin-top:4%
 margin-bottom: 4%;
 text-transform:uppercase;
+@media(max-width:768px){
+  font-size:9vw;
+}
 @media(min-width:1024px){
   font-size:5vw;
 }
@@ -46,6 +32,9 @@ color:aliceblue;
 text-align:center;
 margin-top:-2%
 margin-bottom: 4%;
+@media(max-width:768px){
+  font-size:5vw;
+}
 @media(min-width:1024px){
   font-size:3vw;
 }
@@ -61,23 +50,28 @@ const InnerContainer = styled.div`
 display:flex;
 justify-content:center;
 flex-direction: column;
-height: 100%;
+height: 100vh;
 background:#00000085;
-padding-top: 10%;
-padding-bottom:10%;
+
+
 @media(max-width:425px){
-  padding-top: 20%;
+  height: 100vh;
 }
 `
 
 const Btn = styled.button`
 padding:13px 30px;
 background:var(--primary-color);
-color:var(--secondary-color);;
+color:var(--secondary-color);
 font-weight:bold;
 font-size:12px;
 text-transform:uppercase
-border:none;
+border:1px solid white;
+&:hover{
+  background:var(--Section-color);
+  border:1px solid var(--Section-color);
+}
+
 margin:5px;
 min-width: 144px;
 @media(max-width:425px){
@@ -118,7 +112,7 @@ class Jumbotron extends Component {
               smooth={true}
               offset={-100}
               duration= {500}>
-                <Btn>Our Services</Btn></Link>
+                <Btn>PROJECTS</Btn></Link>
               <Link
               activeClass="active"
               to="ContactMe"
@@ -126,12 +120,15 @@ class Jumbotron extends Component {
               smooth={true}
               offset={-100}
               duration= {500}>
-                <Btn>GET A QUOTE</Btn></Link>
+                <Btn>CONTACT ME</Btn></Link>
             </BtnGroup>
            
             </Fragment>
+            <Footer1></Footer1>
            </InnerContainer >
-        </Container> 
+        
+        </Container>
+       
     );
   }
 }
