@@ -1,4 +1,4 @@
-import React, { Component,Fragment } from 'react';
+import React, { Component } from 'react';
 import sytled from "styled-components";
 import Forms from "./form.jsx";
 import Background from '../images/contact.jpg'
@@ -11,8 +11,16 @@ const Container=sytled.div`
     height:100%;
     width:calc(100%/1)
     margin:0px 0px;
-   
-   
+    z-index:1;
+    position:relative;
+
+    @media (max-width:425px){
+        height:100%;
+      }
+      @media (min-width:768px){
+        height: 100vh;
+      }
+    
 `
 
 const Container1=sytled.div`
@@ -21,7 +29,7 @@ position:relative;
 margin-top:0%;
 left:0%;
 top:-0px;
-
+padding-bottom:5%;
 width:100%;
 height:100%;
 
@@ -39,8 +47,9 @@ const Textcontainer=sytled.div`
 `
 
 const Text=sytled.p`
+    width:60%; 
     color:white;
-    margin:0 auto;
+    
     padding:10px 0px;
 @media(max-width:425px){
     width:100%; 
@@ -73,7 +82,7 @@ const Item=sytled.li`
 
 const ContainerInner=sytled.div`
     display:flex;
-    padding: 0px 5% 10% 5%;
+    padding: 0px 5% 0% 5%;
 
 @media(max-width:768px){
     display:flex;
@@ -98,20 +107,6 @@ const FormContainer=sytled.div`
 }
 `
 
-const Mapouter=sytled.div`
-    position:relative;
-    text-align:center;
-    height:300px;
-    width:100%;
-    padding:3% 0px
-`
-const Gmapcanvas=sytled.div`
-    overflow:hidden;
-    background:none!important;
-    height:300px;
-    width:100%;
-    padding:0% 0px
-`
 
 const List=sytled.ul`
 
@@ -139,9 +134,7 @@ render() {
                <Headingcontainer ><Heading className="headings ">Get In Touch</Heading></Headingcontainer>
                
                <ContainerInner>
-               <FormContainer >
-                    <Forms/>
-               </FormContainer>
+             
                    <Textcontainer>
                  
               
@@ -158,13 +151,11 @@ render() {
                    <Item><Sub><Anchor href="tel:065 947 9631"><i class="fa fa-phone"/> &nbsp; 065 947 9631</Anchor></Sub></Item>
                </List>
                
-               <Mapouter class="mapouter">
-                       <Gmapcanvas className="gmap_canvas">
-                           <iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Cape%20Town&t=&z=13&ie=UTF8&iwloc=&output=embed"  scrolling="no" ></iframe>
-                       </Gmapcanvas>
-                </Mapouter>
+              
                </Textcontainer>
-
+               <FormContainer >
+                    <Forms/>
+               </FormContainer>
               
 
                </ContainerInner>

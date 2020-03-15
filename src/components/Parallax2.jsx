@@ -11,11 +11,6 @@ padding:0px;
 height:100%;
 `
 
-const Heading = styled.h2`
-text-align:center;
-color:white;
-margin:0px;
-`
 
 const Flexed = styled.div`
 display:flex;
@@ -23,11 +18,16 @@ flex-direction:row;
 justify-content: center;
 margin: 0 auto;
 width: 100%;
-@media(max-width:786px){
-    flex-direction:column;
-    justify-content: center;
-    margin:0 auto;
-}
+@media(max-width:425px){
+      flex-direction:column  ;
+      justify-content: center;
+      margin:0 auto;
+  }
+@media(min-width:426px) and (max-width:786px){
+      flex-direction:row  ;
+      justify-content: center;
+      margin:0 auto;
+  }
 `
 
 function Parallax() {

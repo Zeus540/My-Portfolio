@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-
 background: var(--Section-color);
 text-align: center;
+z-index:1;
+position:relative;
 `
 
 const Heading = styled.h2`
@@ -14,9 +15,9 @@ text-align: center;
 `
 
 const Para = styled.p`
-max-width:80%
+max-width:50%
 color:white
-text-align:center
+text-align:justify
 display:block
 margin:0 auto;
 padding-bottom:20px;

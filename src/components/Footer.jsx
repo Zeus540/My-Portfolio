@@ -67,14 +67,6 @@ const Legal = styled.div`
 display: inline-block;
 `
 
-const I = styled.i`
-width:30px;
-height:30px;
-margin:15px 5px;
-border-radius: 5px;
-
-`
-
 const Anchor = styled.a`
 text-decoration:none;
 color:white;
@@ -108,7 +100,7 @@ class Footer extends Component {
                             </List>
                         </Social>
                         <Legal>
-                <Copyright><Span>&nbsp;" OCTAPUS _ "  &copy;</Span> &nbsp;All Right Reserved Copyright 2019</Copyright>
+                <Copyright><Span>&nbsp;" # The Port _ "  &copy;</Span> &nbsp;All Right Reserved Copyright 2019</Copyright>
                 </Legal>
             </Container>
            

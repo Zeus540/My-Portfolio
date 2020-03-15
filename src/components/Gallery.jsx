@@ -23,7 +23,8 @@ padding: 0% 0% 3% 0%;
 margin:0 auto;
 height:100%;
 background: var(--Section-color);
-
+z-index:1;
+position:relative;
 
 `
 const Heading = styled.h2`
@@ -73,7 +74,7 @@ class Gallery extends Component {
   }
   render() {
 
-    const handleOnDragStart = (e) => e.preventDefault()
+   
 
     return (
       
@@ -94,47 +95,47 @@ class Gallery extends Component {
                 disableAutoPlayOnAction={false}
                 buttonsDisabled={false}>
                   <Fragment>
-                  <img src={css}   className="-d-b" />
+                  <img src={css}   className="-d-b" alt="ref" />
                  <Text>Css3</Text>
                   </Fragment>
                   <Fragment>
-                  <img src={boot}  className="-d-b" />
+                  <img src={boot}  className="-d-b" alt="ref" />
                  <Text>BootStrap</Text>
                   </Fragment>
                   <Fragment>
-                  <img src={git}  className="-d-b" />
+                  <img src={git}  className="-d-b" alt="ref" />
                  <Text>Git</Text>
                   </Fragment>
                   <Fragment>
-                  <img src={html}  className="-d-b" />
+                  <img src={html}  className="-d-b" alt="ref" />
                  <Text>Html5</Text>
                   </Fragment>
                   <Fragment>
-                  <img src={java}  className="-d-b" />
+                  <img src={java}  className="-d-b" alt="ref" />
                  <Text>JavaScript</Text>
                   </Fragment>
                   <Fragment>
-                  <img src={mail}  className="-d-b" />
+                  <img src={mail}  className="-d-b" alt="ref" />
                  <Text>MailChimp</Text>
                   </Fragment>
                   <Fragment>
-                  <img src={npm}  className="-d-b" />
+                  <img src={npm}  className="-d-b" alt="ref" />
                  <Text>Npm</Text>
                   </Fragment>
                   <Fragment>
-                  <img src={word}  className="-d-b" />
+                  <img src={word}  className="-d-b" alt="ref" />
                  <Text>WordPress</Text>
                   </Fragment>
                   <Fragment>
-                  <img src={react}  className="-d-b" />
+                  <img src={react}  className="-d-b" alt="ref" />
                  <Text>React.js</Text>
                   </Fragment>
                   <Fragment>
-                  <img src={bit}  className="-d-b" />
+                  <img src={bit}  className="-d-b" alt="ref" />
                  <Text>BitBucket</Text>
                   </Fragment>
                   <Fragment>
-                  <img src={sass} className="-d-b" />
+                  <img src={sass} className="-d-b" alt="ref" />
                  <Text>Sass</Text>
                   </Fragment>
                 </AliceCarousel>      

@@ -10,21 +10,28 @@ min-height:100%;
 background-image:url(${Color});
 background-size:100% 100%;
 position: relative;
-
+@media(min-width:1024px){
+  background-attachment: fixed;
+}
 `
 
 
 const Heading1 = styled.h2`
 color:var(--secondary-color);
 text-align:center;
-margin-top:4%
+margin-top:-10%
 margin-bottom: 4%;
+width: 100%;
+z-index:0;
 text-transform:uppercase;
 @media(max-width:768px){
   font-size:9vw;
+  margin-bottom: 12%;
+  
 }
 @media(min-width:1024px){
   font-size:5vw;
+  position: fixed;
 }
 `
 const Heading = styled.h2`
@@ -32,11 +39,15 @@ color:aliceblue;
 text-align:center;
 margin-top:-2%
 margin-bottom: 4%;
+z-index:0;
+width: 100%;
 @media(max-width:768px){
   font-size:5vw;
 }
 @media(min-width:1024px){
   font-size:3vw;
+  position: fixed;
+ 
 }
 `
 
@@ -85,10 +96,16 @@ display: flex;
 justify-content: center;
 width:100%;
 margin-top:5%
+z-index:0;
 @media(max-width:425px){
   flex-direction:column
   width:100%;
   align-items: center;
+}
+@media(min-width:1024px){
+  font-size:3vw;
+  position: fixed;
+  width: 100%;
 }
 ` 
 

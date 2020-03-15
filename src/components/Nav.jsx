@@ -61,10 +61,10 @@ const ListItem = styled.li`
 list-style:none;
 color:var(--secondary-color);
 margin:0px 0px
-padding:20px 10px;
 transition: ease-in 200ms;
 height:auto;
 @media(max-width:425px){
+  padding:20px 10px;
   &:hover {
     padding:20px 50px;
     background:var(--secondary-color);
@@ -73,7 +73,7 @@ height:auto;
   
 }
 @media(min-width:426px){
-     padding:20px 6px;
+  padding:20px 20px;
   &:hover {
     padding:20px 100px;
     background:var(--secondary-color);

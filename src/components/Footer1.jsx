@@ -2,19 +2,23 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-background-color:var(--primary-color);
+background-color:var(--Section-color);
 display:inline-block;
-width:100%;
+border-radius:0px 0px 0px 0px;
 padding: 10px 0px;
 position:absolute;
 bottom:0px
+
 @media(max-width:425px){
     display:flex;
     flex-direction:column;
     text-align:center;
     position:unset;
-
+    background-color:var(--Primary-color);
 }
+@media(min-width:1024px){
+  
+  }
 `
 
 const Social = styled.div`
@@ -34,7 +38,7 @@ const List = styled.ul`
 float:right;
 margin: 0px;
 display:flex;
-padding-right:10px;
+padding-top:5px;
         flex-direction:column;
     @media(max-width:425px){
         padding:0px;
@@ -48,13 +52,12 @@ list-style:none;
 color:var(--secondary-color);
 font-weight:bolder;
 display:inline-block;
-padding:0px 0px;
-   
+padding-left: 5px;
+padding-right: 5px;
     @media(max-width:425px){
         display:inline-flex;
         flex-direction:row;
         text-align:center;
-       
 }
 `
 

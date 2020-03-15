@@ -1,4 +1,4 @@
-import React, { Component,Fragment } from 'react'
+import React, { Component } from 'react'
 import styled from 'styled-components'
 import Parallax from './Parallax.jsx'
 import Parallax2 from './Parallax2.jsx' 
@@ -17,7 +17,8 @@ background:var(--secondary-color);
 background-attachment:fixed;
 background-image:url(${Un});
 background-size:100% 100%;
-
+z-index:1;
+position:relative;
 
 `
 const Overlay = styled.div`
@@ -78,7 +79,6 @@ class Gallery extends Component {
   render() {
     
 
-    const handleOnDragStart = (e) => e.preventDefault()
 
     return (
       
@@ -97,7 +97,6 @@ class Gallery extends Component {
                 autoPlayDirection="rtl"
                 autoPlay={true}
                 fadeOutAnimation={true}
-                mouseTrackingEnabled={true}
                 disableAutoPlayOnAction={true}
                 onSlideChange={this.onSlideChange}
                 onSlideChanged={this.onSlideChanged}

@@ -12,7 +12,8 @@ padding: 0% 0% 3% 0%;
 margin:0 auto;
 height:100%;
 background: var(--Section-color);s
-
+z-index:1;
+position:relative;
 
 `
 const Heading = styled.h2`
@@ -69,7 +70,7 @@ class Testimonials extends Component {
   }
   render() {
 
-    const handleOnDragStart = (e) => e.preventDefault()
+   
 
     return (
       
@@ -87,7 +88,6 @@ class Testimonials extends Component {
                 autoPlayDirection="rtl"
                 autoPlay={true}
                 fadeOutAnimation={true}
-                mouseTrackingEnabled={true}
                 disableAutoPlayOnAction={true}
                 onSlideChange={this.onSlideChange}
                 onSlideChanged={this.onSlideChanged}
