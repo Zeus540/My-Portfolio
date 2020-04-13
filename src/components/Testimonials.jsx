@@ -81,17 +81,13 @@ class Testimonials extends Component {
       
                 <Box>
                 <AliceCarousel 
-                mouseTrackingEnabled 
-                items={this.state.galleryItems}
-                responsive={this.responsive}
-                autoPlayInterval={2000}
-                autoPlayDirection="rtl"
-                autoPlay={true}
-                fadeOutAnimation={true}
-                disableAutoPlayOnAction={true}
-                onSlideChange={this.onSlideChange}
-                onSlideChanged={this.onSlideChanged}
-                buttonsDisabled={true}>
+               items={this.state.galleryItems}
+               responsive={this.responsive}
+               autoPlayInterval={2000}
+               autoPlayDirection="rtl"
+               autoPlay={true}
+               fadeOutAnimation={true}
+               disableAutoPlayOnAction={false}>
                   <Fragment>
                   <Headingb>Digitas Liqurice</Headingb>
                   <Text>My new site is so much faster and easier to work with than my old site.<br/>  It used to take me an hour or more to update a page <br/>

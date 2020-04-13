@@ -1,4 +1,10 @@
-
+.alice-carousel__dots {
+    margin: 30px 3px 5px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: none;
+}
 :root {
     --primary-color: transparent;
     --secondary-color: white;

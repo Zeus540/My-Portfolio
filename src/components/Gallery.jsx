@@ -88,7 +88,7 @@ class Gallery extends Component {
                 
                 items={this.state.galleryItems}
                 responsive={this.responsive}
-                autoPlayInterval={2000}
+                autoPlayInterval={100}
                 autoPlayDirection="rtl"
                 autoPlay={true}
                 fadeOutAnimation={true}

@@ -90,17 +90,15 @@ class Gallery extends Component {
       
                 <Box>
                 <AliceCarousel 
-                mouseTrackingEnabled 
+                
                 items={this.state.galleryItems}
                 responsive={this.responsive}
                 autoPlayInterval={2000}
                 autoPlayDirection="rtl"
                 autoPlay={true}
                 fadeOutAnimation={true}
-                disableAutoPlayOnAction={true}
-                onSlideChange={this.onSlideChange}
-                onSlideChanged={this.onSlideChanged}
-                buttonsDisabled={true}>
+                disableAutoPlayOnAction={false}
+              >
                 
             <Parallax/>
             <Parallax2/>
