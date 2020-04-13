@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b8f257bd.chunk.css",
+    "main.js": "/static/js/main.d105973b.chunk.js",
+    "main.js.map": "/static/js/main.d105973b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c942ae72.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c942ae72.js.map",
+    "static/css/2.c2d4b67f.chunk.css": "/static/css/2.c2d4b67f.chunk.css",
+    "static/js/2.50996258.chunk.js": "/static/js/2.50996258.chunk.js",
+    "static/js/2.50996258.chunk.js.map": "/static/js/2.50996258.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.b0cb5dd7daa9e1e14c336ef12f56b902.js": "/precache-manifest.b0cb5dd7daa9e1e14c336ef12f56b902.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.c2d4b67f.chunk.css.map": "/static/css/2.c2d4b67f.chunk.css.map",
+    "static/css/main.b8f257bd.chunk.css.map": "/static/css/main.b8f257bd.chunk.css.map",
+    "static/media/color.jpg": "/static/media/color.b5bfd186.jpg",
+    "static/media/contact.jpg": "/static/media/contact.1a4741e3.jpg",
+    "static/media/mailchimp.png": "/static/media/mailchimp.d230c03f.png",
+    "static/media/un.jpg": "/static/media/un.ec5c0b39.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c942ae72.js",
+    "static/css/2.c2d4b67f.chunk.css",
+    "static/js/2.50996258.chunk.js",
+    "static/css/main.b8f257bd.chunk.css",
+    "static/js/main.d105973b.chunk.js"
+  ]
+}

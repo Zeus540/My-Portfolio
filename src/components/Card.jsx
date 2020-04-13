@@ -7,7 +7,7 @@ transition: ease-in 200ms;
 margin:1%;
 padding: 20px;
 background:transparent;
-width:calc(100%/3);
+width:calc(100%/5);
 background:var(--primary-color);
 box-shadow: #202020 18px 15px 24px 2px;
 &:hover{

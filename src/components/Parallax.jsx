@@ -1,19 +1,14 @@
 import React, {useState,Fragment} from 'react';
 import styled from 'styled-components';
-import Card2 from './Card.jsx' 
+import Card from './Card.jsx' 
 import Addicts from '../images/react.png'
 import Wolf from '../images/javascript.png'
 import Drip from '../images/css.png'
 
 const Container = styled.div`
-
 padding:0px;
-
 height:100%;
-
 `
-
-
 
 const Flexed = styled.div`
 display:flex;
@@ -50,7 +45,7 @@ return(
             <Flexed >
             <Fragment  >
             {State.map((data, index) => (
-            <Card2 key={index} name={data.name} message={data.message} img={data.img} Link={data.Link}  alt={data.alt}/>))}
+            <Card key={index} name={data.name} message={data.message} img={data.img} Link={data.Link}  alt={data.alt}/>))}
            </Fragment>
            </Flexed>
           

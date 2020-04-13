@@ -13,6 +13,11 @@ color: white;
 margin: 0px;
 text-align: center;
 `
+const Sub = styled.code`
+color: white;
+margin: 0px;
+text-align: center;
+`
 
 const Para = styled.p`
 max-width:50%
@@ -31,6 +36,7 @@ class TextBanner extends Component {
         return ( 
             <Container>
                 <Heading className="headings">{this.props.heading}</Heading>
+                <Sub>{this.props.sub}</Sub>
                 <Para>{this.props.paragraph1}</Para>
                 <br/>
                 <Para>{this.props.paragraph2}</Para>

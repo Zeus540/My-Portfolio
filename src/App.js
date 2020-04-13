@@ -14,7 +14,8 @@ function App() {
 
   const [State1] = useState([
     {key:"",
-    heading:"About Me",
+    heading:"Have you heard about the Bird ?",
+    sub:"Have you heard about the Bird ?",
     paragraph1:"I have always had a passion for learning and trying new things. I would like to consider myself a hardworking and reliable person that doesn’t give up until I find a solution to the problem like applying new methods and ideas to traditional problem solving I like working on new and exciting projects that allow me to express my creativity and opinions. I also consider myself a team worker and able to cope with a deadline and a high pressure environment",
 
 }
@@ -29,7 +30,7 @@ function App() {
       <Jumbotron text='Zaheer Roberts' text2='Front-End Developer'  />
 
       {State1.map((data, index) => (
-            <TextBanner key={index}  heading={data.heading} paragraph1={data.paragraph1} />))}       
+            <TextBanner key={index}  heading={data.heading} sub={data.sub} paragraph1={data.paragraph1} />))}       
  <Gallery/>
 
  <Gallery3/>
