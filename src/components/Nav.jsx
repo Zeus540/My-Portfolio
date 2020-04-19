@@ -65,10 +65,13 @@ transition: ease-in 200ms;
 height:auto;
 @media(max-width:425px){
   padding:20px 10px;
+  font-size:8px;
   &:hover {
-    padding:20px 50px;
-    background:var(--secondary-color);
-    color:var(--Section-color);
+    padding: 15px 40px;
+    background: var(--secondary-color);
+    color: var(--Section-color);
+    position: relative;
+    top: 44px;
   }
   
 }
@@ -98,7 +101,7 @@ render() {
           spy={true}
           smooth={true}
           offset={-100}
-          duration= {350}
+          duration= {300}
           ><Logo>" Z &nbsp;ROBERTS "</Logo>
         </Link>
         
@@ -110,7 +113,7 @@ render() {
           spy={true}
           smooth={true}
           offset={-100}
-          duration= {350}
+          duration= {300}
           ><ListItem>Home</ListItem>
         </Link>
       
@@ -121,7 +124,7 @@ render() {
           spy={true}
           smooth={true}
           offset={-250}
-          duration= {350}
+          duration= {300}
           ><ListItem>About Me</ListItem>
         </Link>  
      

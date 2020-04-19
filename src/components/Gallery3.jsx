@@ -90,7 +90,6 @@ class Gallery extends Component {
       
                 <Box>
                 <AliceCarousel 
-                
                 items={this.state.galleryItems}
                 responsive={this.responsive}
                 autoPlayInterval={2000}
@@ -99,7 +98,6 @@ class Gallery extends Component {
                 fadeOutAnimation={true}
                 disableAutoPlayOnAction={false}
               >
-                
             <Parallax/>
             <Parallax2/>
                  

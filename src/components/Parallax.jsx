@@ -31,22 +31,25 @@ width: 100%;
 function Parallax() {
  
   const [State] = useState([
-    {name:"R", message:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iste maiores hic! Aspernatur neque eos ullam quis cum placeat libero. Ad pariatur quibusdam doloribus ut, commodi non error inventore quidem?", img:Drip,  alt:"image"},
-    {name:"S", message:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laborum quos nemo nihil obcaecati? Est itaque porro harum quasi impedit.", img:Addicts, alt:"image"},
-    {name:"R", message:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum doloremque ex numquam eos provident dolore repellendus laborum, amet ut accusamus eius veniam eaque perspiciatis magnam rerum. Animi quisquam ullam soluta ipsa ducimus, vero fugiat eligendi neque magnam accusamus nesciunt itaque!", img:Wolf, alt:"image"},
-    
+    {name:"Z", message:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iste maiores hic! Aspernatur neque eos ullam quis cum placeat libero. Ad pariatur quibusdam doloribus ut, commodi non error inventore quidem?", img:Drip,  alt:"image"},
+    {name:"A", message:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iste maiores hic! Aspernatur neque eos ullam quis cum placeat libero. Ad pariatur quibusdam doloribus ut, commodi non error inventore quidem?", img:Drip,  alt:"image"},
+    {name:"H", message:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iste maiores hic! Aspernatur neque eos ullam quis cum placeat libero. Ad pariatur quibusdam doloribus ut, commodi non error inventore quidem?", img:Drip,  alt:"image"},
     
   ]);
+
+ 
  
 return(
    <div className="row">
         <Container  id="Skills">
        
             <Flexed >
-            <Fragment  >
+
+            <Fragment>
             {State.map((data, index) => (
             <Card key={index} name={data.name} message={data.message} img={data.img} Link={data.Link}  alt={data.alt}/>))}
            </Fragment>
+       
            </Flexed>
           
         </Container>

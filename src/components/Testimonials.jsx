@@ -28,7 +28,6 @@ height:100%;
 background: var(--Section-color);
 z-index:1;
 position:relative;
-
 &:hover {
   animation: 1000ms ease-in-out ${Fadein};
   animation-fill-mode:forwards;
