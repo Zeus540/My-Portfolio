@@ -1,8 +1,22 @@
 import React, { Component,Fragment } from 'react'
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 
+const Fadein =keyframes`
+100%{
+  background:#206a9e;
+}
+
+
+
+`
+
+const Heading = styled.h2`
+color: var(--secondary-color);
+margin: 0px;
+text-align: center;
+`
 
 const Container = styled.div`
 width:100%;
@@ -11,16 +25,17 @@ align-items:center;
 padding: 0% 0% 3% 0%;
 margin:0 auto;
 height:100%;
-background: var(--Section-color);s
+background: var(--Section-color);
 z-index:1;
 position:relative;
 
+&:hover {
+  animation: 1000ms ease-in-out ${Fadein};
+  animation-fill-mode:forwards;
+}
+
 `
-const Heading = styled.h2`
-color: var(--secondary-color);
-margin: 0px;
-text-align: center;
-`
+
 const Headingb = styled.h2`
 color: coral;
 margin: 10px;
