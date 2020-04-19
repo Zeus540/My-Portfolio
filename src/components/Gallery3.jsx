@@ -101,7 +101,7 @@ class Gallery extends Component {
                 disableAutoPlayOnAction={false}
               >
             
-            <Project4/>
+            <Project2/>
             <Project4/> 
                 </AliceCarousel>      
                 </Box>

@@ -66,11 +66,11 @@ height:auto;
 @media(max-width:480px){
   padding:20px 10px;
   font-size:10px;
-  &:hover {
+  &:active {
     padding: 15px 40px;
     background: var(--secondary-color);
     color: var(--Section-color);
-    transform: translateY(100%);
+   
   }
   
 }
@@ -80,7 +80,7 @@ height:auto;
     padding: 15px 40px;
     background: var(--secondary-color);
     color: var(--Section-color);
-    transform: translateY(100%);
+    
   }
   
 }
