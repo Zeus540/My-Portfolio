@@ -65,13 +65,12 @@ transition: ease-in 200ms;
 height:auto;
 @media(max-width:425px){
   padding:20px 10px;
-  font-size:8px;
+  font-size:10px;
   &:hover {
     padding: 15px 40px;
     background: var(--secondary-color);
     color: var(--Section-color);
     transform: translateY(100%);
-   
   }
   
 }
