@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import Parallax from './Parallax.jsx'
-import Parallax2 from './Parallax2.jsx' 
+import Project1 from './Project1.jsx'
+import Project2 from './Project2.jsx'
+import Project3 from './Project3.jsx' 
+import Project4 from './Project4.jsx'  
 import Un from '../images/un.jpg';
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
@@ -98,9 +100,9 @@ class Gallery extends Component {
                 fadeOutAnimation={true}
                 disableAutoPlayOnAction={false}
               >
-            <Parallax/>
-            <Parallax2/>
-                 
+            
+            <Project4/>
+            <Project4/> 
                 </AliceCarousel>      
                 </Box>
                 

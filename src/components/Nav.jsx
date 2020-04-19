@@ -63,7 +63,7 @@ color:var(--secondary-color);
 margin:0px 0px
 transition: ease-in 200ms;
 height:auto;
-@media(max-width:425px){
+@media(max-width:480px){
   padding:20px 10px;
   font-size:10px;
   &:hover {
@@ -77,9 +77,10 @@ height:auto;
 @media(min-width:426px){
   padding:20px 20px;
   &:hover {
-    padding:20px 100px;
-    background:var(--secondary-color);
-    color:var(--Section-color);
+    padding: 15px 40px;
+    background: var(--secondary-color);
+    color: var(--Section-color);
+    transform: translateY(100%);
   }
   
 }

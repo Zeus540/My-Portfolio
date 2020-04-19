@@ -31,11 +31,12 @@ function App() {
 
       {State1.map((data, index) => (
             <TextBanner key={index}  heading={data.heading} sub={data.sub} paragraph1={data.paragraph1} />))}       
- <Gallery/>
+
 
  <Gallery3/>
- <Testimonials/>
+ <Gallery/>
            <ContactMe/>
+           <Testimonials/>
       <Footer/>
     </div>
   );

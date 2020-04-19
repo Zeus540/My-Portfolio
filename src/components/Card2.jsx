@@ -26,6 +26,11 @@ margin:40px;
 @media(min-width:769px) and (max-width:1440px) {
     width:calc(100%/1);
     margin-bottom:2%;
+    &:hover{
+        transform:scale(2.05);
+        background:#6b222d;
+        box-shadow: #000000 18px 15px 24px 2px;
+    }
   
 }
 `

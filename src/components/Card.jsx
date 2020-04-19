@@ -2,44 +2,47 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-height: inherit;
+height: 100%;
 transition: ease-in 200ms;
 margin:1%;
-padding: 20px;
+padding: 50px 20px 50px 20px;
 background:transparent;
-width:calc(100%/5);
+
 background:var(--primary-color);
 box-shadow: #202020 18px 15px 24px 2px;
 &:hover{
     transform:scale(1.05);
     background:var(--Section-color);
-    box-shadow: #202020 18px 15px 24px 2px;
+    
     h4{
         color:var(--secondary-color);
         text-decoration:unset!important;
     }
 }
-@media(max-width:425px){
+@media (max-width:425px){
     width:calc(100%/1.4);
     margin: 0 auto;
-    margin-bottom:15%;
+   
 }
-@media(min-width:426px) and(max-width:786px){
-    width:calc(100%/2);
+@media (min-width:426px) and (max-width:768px){
+    width:calc(100%/2.5);
     margin: 0 auto;
-    margin-bottom:15%;
+    
 }
 
-@media(min-width:500px) and (max-width:1440px) {
-   
+@media (min-width:769px) and (max-width:2560px) {
+    width:calc(100%/4);
     margin-bottom:2%;
+    &:hover{
+        box-shadow: none;
+        transform:scale(1.1);
+        postion:absolute;
+        background:var(--Section-color);
+       
   
 }
 
-@media(min-width:1440px)  {
-    width:calc(100%/6);
-    margin-bottom:2%;
-}
+
 `
 
 const Content = styled.div`
@@ -86,7 +89,9 @@ const Text= styled.div`
 const Des= styled.p`
     color:aliceblue;
     text-decoration:none;
-    text-align:center; 
+    text-align:center;
+    width:80%;
+    margin: 0 auto;
 `
 
 class Card extends Component {

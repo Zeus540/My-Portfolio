@@ -24,10 +24,21 @@ margin-bottom: 4%;
 width: 100%;
 z-index:0;
 text-transform:uppercase;
-@media(max-width:768px){
+@media(max-width:425px){
   font-size:9vw;
-  margin-bottom: 12%;
+  padding-bottom: 15%;
+  padding-top: 25%;
   
+}
+@media (max-width: 480px) and (orientation: landscape) {
+  font-size:9vw;
+  padding-bottom: 15%;
+  padding-top: 25%;
+}
+@media(min-width:426px) and (max-width:768px){
+  font-size:9vw;
+  padding-bottom: 10%;
+  padding-top: 20%;
 }
 @media(min-width:1024px){
   font-size:5vw;
@@ -95,7 +106,7 @@ const BtnGroup = styled.div`
 display: flex;
 justify-content: center;
 width:100%;
-margin-top:5%
+padding-top:5%
 z-index:0;
 @media(max-width:425px){
   flex-direction:column
@@ -106,6 +117,7 @@ z-index:0;
   font-size:3vw;
   position: fixed;
   width: 100%;
+  margin-top:5%
 }
 ` 
 

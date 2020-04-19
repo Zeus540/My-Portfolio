@@ -16,9 +16,11 @@ const Container=sytled.div`
 
     @media (max-width:425px){
         height:100%;
+     
       }
       @media (min-width:768px){
         height: 100vh;
+        
       }
     
 `
@@ -35,6 +37,7 @@ height:100%;
 
 @media (max-width:425px){
   height:100%;
+
 }
     
    
@@ -87,6 +90,8 @@ const ContainerInner=sytled.div`
 @media(max-width:768px){
     display:flex;
     flex-direction:column;
+    width: 80%;
+    margin: 0 auto;
 }
 @media(min-width:769px){
    
