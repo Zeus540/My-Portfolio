@@ -70,8 +70,8 @@ height:auto;
     padding: 15px 40px;
     background: var(--secondary-color);
     color: var(--Section-color);
-    position: relative;
-    top: 44px;
+    transform: translateY(100%);
+   
   }
   
 }
